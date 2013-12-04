@@ -36,7 +36,7 @@ font=[UIFont fontWithFont:font style:UIFONT_BOLD];
 
 ### Setting Font Combo Style
 
-_**For exmaple:setting combo style with bold and oblique**
+_**For exmaple:setting combo style with bold and oblique**_
 
 ```objective-c
 font=[UIFont fontWithFont:font style:[UIFONT_BOLD stringByAppendingString:UIFONT_OBLIQUE]];
