@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                    * Use combo style, like (BoldOblique)
                    * If not find font, return nil.
                    DESC
-  s.homepage     = "www.couldhll.com"
+  s.homepage     = "http://www.couldhll.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "could_hll" => "could_hll@hotmail.com" }
   s.platform     = :ios, '5.0'
