@@ -11,6 +11,8 @@ Set UIFont style(Bold,Italic,Light,Oblique and combo).
 + (UIFont*)fontWithFont:(UIFont*)font style:(NSString*)style.
 ```
 
+[![Build Status](https://travis-ci.org/couldhll/HLLFont.svg)](https://travis-ci.org/couldhll/HLLFont)
+
 ## Installation
 
 ### From CocoaPods
