@@ -493,6 +493,7 @@
 				B2D647D1181A1137005E353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2D647D2181A1137005E353E /* Build configuration list for PBXNativeTarget "HLLFontDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +502,7 @@
 				B2D647D4181A1137005E353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
