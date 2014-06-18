@@ -74,16 +74,7 @@
 }
 
 - (void)testItalic
-{
-    NSMutableArray *fontNames = [[NSMutableArray alloc] init];
-    NSArray *fontFamilyNames = [UIFont familyNames];
-    for (NSString *familyName in fontFamilyNames) {
-        //        NSLog(@"Font Family Name = %@", familyName);
-        NSArray *names = [UIFont fontNamesForFamilyName:familyName];
-        //        NSLog(@"Font Names = %@", fontNames);
-        [fontNames addObjectsFromArray:names];
-    }
-    
+{    
     UIFont *orignalFont=[UIFont fontWithName:@"GillSans" size:18];
     UIFont *styleFont=[UIFont fontWithName:@"GillSans-Italic" size:18];
     UIFont *hllFont=[UIFont fontWithFont:orignalFont style:UIFONT_ITALIC];

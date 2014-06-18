@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	   
     // init label
     UILabel *label=[[UILabel alloc] init];
     label.font=[UIFont fontWithName:@"Helvetica" size:18];
@@ -31,6 +31,18 @@
     
     // change font
     label.font=[UIFont fontWithFont:label.font style:UIFONT_BOLD];
+    
+//    NSMutableArray *fontNames = [[NSMutableArray alloc] init];
+//    NSArray *fontFamilyNames = [UIFont familyNames];
+//    for (NSString *familyName in fontFamilyNames)
+//    {
+//        NSArray *names = [UIFont fontNamesForFamilyName:familyName];
+//        [fontNames addObjectsFromArray:names];
+//        NSLog(@"Font Family Name = %@", familyName);
+//        NSLog(@"Font Names = %@", names);
+//        NSLog(@"==============================");
+//    }
+//    NSLog(@"All Font Names = %@", fontNames);
 }
 
 - (void)didReceiveMemoryWarning
