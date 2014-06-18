@@ -2,7 +2,6 @@ language: objective-c
 xcode_workspace: HLLFont.xcworkspace
 xcode_scheme: HLLFont
 xcode_sdk:
-  - iphonesimulator6.0
   - iphonesimulator6.1
   - iphonesimulator7.0
   - iphonesimulator7.1
