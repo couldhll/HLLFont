@@ -75,8 +75,17 @@
 
 - (void)testItalic
 {
-    UIFont *orignalFont=[UIFont fontWithName:@"HelveticaNeue" size:18];
-    UIFont *styleFont=[UIFont fontWithName:@"HelveticaNeue-Italic" size:18];
+    NSMutableArray *fontNames = [[NSMutableArray alloc] init];
+    NSArray *fontFamilyNames = [UIFont familyNames];
+    for (NSString *familyName in fontFamilyNames) {
+        //        NSLog(@"Font Family Name = %@", familyName);
+        NSArray *names = [UIFont fontNamesForFamilyName:familyName];
+        //        NSLog(@"Font Names = %@", fontNames);
+        [fontNames addObjectsFromArray:names];
+    }
+    
+    UIFont *orignalFont=[UIFont fontWithName:@"GillSans" size:18];
+    UIFont *styleFont=[UIFont fontWithName:@"GillSans-Italic" size:18];
     UIFont *hllFont=[UIFont fontWithFont:orignalFont style:UIFONT_ITALIC];
     
     XCTAssertTrue([hllFont.fontName isEqual:styleFont.fontName], @"hllFont[%@] is not styleFont[%@].",hllFont.fontName,styleFont.fontName);
@@ -84,8 +93,8 @@
 
 - (void)testBoldItalic
 {
-    UIFont *orignalFont=[UIFont fontWithName:@"HelveticaNeue" size:18];
-    UIFont *styleFont=[UIFont fontWithName:@"HelveticaNeue-BoldItalic" size:18];
+    UIFont *orignalFont=[UIFont fontWithName:@"GillSans" size:18];
+    UIFont *styleFont=[UIFont fontWithName:@"GillSans-BoldItalic" size:18];
     UIFont *hllFont=[UIFont fontWithFont:orignalFont style:[UIFONT_BOLD stringByAppendingString:UIFONT_ITALIC]];
     
     XCTAssertTrue([hllFont.fontName isEqual:styleFont.fontName], @"hllFont[%@] is not styleFont[%@].",hllFont.fontName,styleFont.fontName);
@@ -93,8 +102,8 @@
 
 - (void)testLightItalic
 {
-    UIFont *orignalFont=[UIFont fontWithName:@"HelveticaNeue" size:18];
-    UIFont *styleFont=[UIFont fontWithName:@"HelveticaNeue-LightItalic" size:18];
+    UIFont *orignalFont=[UIFont fontWithName:@"GillSans" size:18];
+    UIFont *styleFont=[UIFont fontWithName:@"GillSans-LightItalic" size:18];
     UIFont *hllFont=[UIFont fontWithFont:orignalFont style:[UIFONT_LIGHT stringByAppendingString:UIFONT_ITALIC]];
     
     XCTAssertTrue([hllFont.fontName isEqual:styleFont.fontName], @"hllFont[%@] is not styleFont[%@].",hllFont.fontName,styleFont.fontName);

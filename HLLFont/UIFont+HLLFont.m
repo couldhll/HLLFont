@@ -14,7 +14,8 @@
 {
     NSString *fontName=font.fontName;
     
-    // remove "." and "Interface"
+    // remove " " and "." and "Interface"
+    fontName=[fontName stringByReplacingOccurrencesOfString:@" " withString:@""];
     fontName=[fontName stringByReplacingOccurrencesOfString:@"." withString:@""];
     fontName=[fontName stringByReplacingOccurrencesOfString:@"Interface" withString:@""];
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2C59ADD19516EF3001C1ACA /* UIFont+HLLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D64792181A1079005E353E /* UIFont+HLLFont.m */; };
 		B2D6476C181A1009005E353E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D6476B181A1009005E353E /* Foundation.framework */; };
 		B2D6477A181A1009005E353E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D64779181A1009005E353E /* XCTest.framework */; };
 		B2D6477B181A1009005E353E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D6476B181A1009005E353E /* Foundation.framework */; };
@@ -185,7 +186,7 @@
 		B2D64760181A1009005E353E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = CouldHll;
 			};
 			buildConfigurationList = B2D64763181A1009005E353E /* Build configuration list for PBXProject "HLLFont" */;
@@ -230,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C59ADD19516EF3001C1ACA /* UIFont+HLLFont.m in Sources */,
 				B2D64788181A1009005E353E /* HLLFontTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +262,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -298,7 +299,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -353,7 +353,6 @@
 		B2D6478F181A1009005E353E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,7 +373,6 @@
 		B2D64790181A1009005E353E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -407,6 +405,7 @@
 				B2D6478D181A1009005E353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2D6478E181A1009005E353E /* Build configuration list for PBXNativeTarget "HLLFontTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +414,7 @@
 				B2D64790181A1009005E353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
